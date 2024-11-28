@@ -213,17 +213,59 @@ __After clicking ```Confirm``` will redirect to message_showing page and delete 
 __After clicking ```Finish``` will redirect back to main page Mall News Page__<br />
 
 ----------------------------------------------------------------------------------
+## *Lost List Page*:
+__Showing all lost report from MongoDB collection: ```lostItemData```__ <br />
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/8e1eeb0aa03571d6951c9c115dc1750af14c68f8/lost%20list1.png" width="1000" height="380">
+
+### - Search
+__Providing ```Search Bar```and ```ENTER``` Button for user to search item from MongoDB collection: ```lostItemData``` with Lost ID.__<br />
+
+## - Update
+__Providing ```Update``` Button [<img src="https://github.com/Harry5317/ProjectS381F/blob/b8f63471f2b48113fc7fbfd600921b769cd905bd/public/graphics/edit.png" width="30" height="30">] It will redirect to Update page__<br />
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/d3e87d5d353d86d1dd8bdf90ca339e4b5cf61079/Lost%20Update.png" width="600" height="350"><br />
+
+__After clicking ```Update``` will redirect to message_showing page and update the report__<br />
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/d3e87d5d353d86d1dd8bdf90ca339e4b5cf61079/UpdateFinish.png" width="300" height="150"><br />
+
+__After clicking ```Finish``` will redirect back to main page Mall News Page__<br />
+
+* __Before Edit__:
+ <img src="https://github.com/Harry5317/PhotoOfPage/blob/d3e87d5d353d86d1dd8bdf90ca339e4b5cf61079/edit1.png" width="1000" height="80">
+ 
+* __After Edit__:
+ <img src="https://github.com/Harry5317/PhotoOfPage/blob/d3e87d5d353d86d1dd8bdf90ca339e4b5cf61079/edit2.png" width="1000" height="80">
+
+
+
+----------------------------------------------------------------------------------
 ## *Claim/Report Lost Page*:
-__Showing all claim information from MongoDB collection: ```claimData```__ <br />
+__Showing all claim item from MongoDB collection: ```claimData```__ <br />
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/cae81a94bf8e3cb2f2b227a7a23ecf8bef51acde/claim.png" width="1000" height="380">
 
+### - Search
+__Providing ```Search Bar```and ```ENTER``` Button for user to search item from MongoDB collection: ```claimData``` with Claim ID.__<br />
 
+### - Report Lost
+__Providing ```REPORT LOST +``` Button for user to add lost item to MongoDB collection: ```lostItemData```__<br />
+__It will redirect to Reportlost page__<br />
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/8e1eeb0aa03571d6951c9c115dc1750af14c68f8/ReportLost.png" width="600" height="350"><br />
 
+__After clicking ```Upload``` button will redirect to message_showing page and upload shop informations to MongoDB collection: ```lostItemDate```__<br />
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/eb1e8a5c824a43bf3b47144c4a6c9c4f7a1bf637/Upload%20Finished.png" width="300" height="150"><br />
 
+__After clicking ```Finish``` will redirect back to main page Mall News Page__<br />
+__Item will be added to LOST LIST__<br />
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/8e1eeb0aa03571d6951c9c115dc1750af14c68f8/Lostlist%20after.png" width="1000" height="400">
 
+### - Delete
+__Providing ```DELETE``` Button for user to delete claim item from MongoDB collection: ```claimData```__<br />
+__It will redirect to message_confirm page__<br />
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/abc471f8f24fda76b06c837a4f68206256d89c88/comfirm%20delete.png" width="300" height="150"><br />
 
+__After clicking ```Confirm``` will redirect to message_showing page and delete the item__<br />
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/abc471f8f24fda76b06c837a4f68206256d89c88/deleted.png" width="300" height="150"><br />
 
-
+__After clicking ```Finish``` will redirect back to main page Mall News Page__<br />
 
 ==================================================================================
 # API Keys:
