@@ -5,11 +5,11 @@ Our Website Link: [Click Me](https://projects381f-1076834146749.asia-east1.run.a
 ==================================================================================
 ## Hello World! We are Group 36!
 ### Our Developers:
-- [13017740] Ng Man Hei
-- [13077944] Wong Kwok Ching
-- [13137889] Lee Chung Ho
-- [13138794] Hui Lin Fung
-- [13134144] Leung Yu Ching
+- __[13017740] Ng Man Hei__
+- __[13077944] Wong Kwok Ching__
+- __[13137889] Lee Chung Ho__
+- __[13138794] Hui Lin Fung__
+- __[13134144] Leung Yu Ching__
 
 ==================================================================================
 ### Front-end Development:
@@ -155,6 +155,7 @@ Account List:
 __Message__: ```Incorrect account or password``` will be shown if wrong account or password were inputed.
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/10a56ef289c2441183b9a0f2890c00a201dd7ee3/error%20account.png" width="300" height="350">
 
+----------------------------------------------------------------------------------
 ## *Accounts*:
 __Using different account to login will show up with different user name.__
 - Login with name: ```cs01```
@@ -164,10 +165,21 @@ __Using different account to login will show up with different user name.__
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/f4aba031301e608c6cd85325b1d5dcf4bf9ce34f/Harry.png" width="1000" height="50">
 
 ### Feel free trying to login with other account !!!
+----------------------------------------------------------------------------------
 ## *Mall News Page*:
 - __Showing all mall news from MongoDB collection: ```newsTitleData```__
-- __Providing ```DELETE``` Button for user to delete news from MongoDB collection: ```newsTitleData```__
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/1f281cfdda590ee5176956ed0ec5d242d92d0ff0/news.png" width="1000" height="350">
+
+- __Providing ```DELETE``` Button for user to delete news from MongoDB collection: ```newsTitleData```__
+- __It will redirect to message_confirm page__
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/abc471f8f24fda76b06c837a4f68206256d89c88/comfirm%20delete.png" width="300" height="150">
+
+- __After clicking ```Confirm``` will redirect to message_showing page and delete the news__
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/abc471f8f24fda76b06c837a4f68206256d89c88/deleted.png" width="300" height="150">
+
+- __After clicking ```Finish``` will redirect back to main page Mall News Page__
+
+----------------------------------------------------------------------------------
 
 ## *Shop Information Page*:
 - __Showing all shop information from MongoDB collection: ```shops```__
