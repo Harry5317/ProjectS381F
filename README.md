@@ -1,10 +1,8 @@
 # Homantin Plaza Customer Service System
 This Website is designed for Customer Service in Homantin Plaza.
-
-https://projects381f-1076834146749.asia-east1.run.app/
+Our Website Link: [Click Me](https://projects381f-1076834146749.asia-east1.run.app/)
 
 ==================================================================================
-
 ## Hello World! We are Group 36!
 ### Our Developers:
 - [13017740] Ng Man Hei
@@ -14,7 +12,6 @@ https://projects381f-1076834146749.asia-east1.run.app/
 - [13134144] Leung Yu Ching
 
 ==================================================================================
-
 ### Front-end Development:
 - Figma (UI design)
 - HTML (Building the structure of the webpage)
@@ -31,6 +28,7 @@ https://projects381f-1076834146749.asia-east1.run.app/
 - Google Cloud (Online Server)
 
 ==================================================================================
+## File Path:
 ```
 ProjectS381F-main/
 ├── public/
@@ -71,3 +69,12 @@ ProjectS381F-main/
 ├── package.json
 └── package-lock.json
 ```
+
+==================================================================================
+# Project File Introduction:
+## server.js :
+#### Features :
+- User Login:
+  Users can login with a username and password.
+- User Logout:
+  
