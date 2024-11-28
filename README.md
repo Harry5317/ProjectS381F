@@ -140,7 +140,7 @@ https://projects381f-1076834146749.asia-east1.run.app/
 
 ==================================================================================
 # Operation guides:
-## *Login Page*:
+# *Login Page*:
 __Input correct account and password in order to login.__ <br />
 Account List:
 ```
@@ -156,7 +156,7 @@ __Message__: ```Incorrect account or password``` will be shown if wrong account 
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/10a56ef289c2441183b9a0f2890c00a201dd7ee3/error%20account.png" width="300" height="350">
 
 ----------------------------------------------------------------------------------
-## *Accounts*:
+# *Accounts*:
 __Using different account to login will show up with different user name.__
 - Login with name: ```cs01```
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/f4aba031301e608c6cd85325b1d5dcf4bf9ce34f/BlackTommy.png" width="1000" height="50">
@@ -166,7 +166,7 @@ __Using different account to login will show up with different user name.__
 
 ### Feel free trying to login with other account !!!
 ----------------------------------------------------------------------------------
-## *Mall News Page*:
+# *Mall News Page*:
 __Showing all mall news from MongoDB collection: ```newsTitleData```__
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/1f281cfdda590ee5176956ed0ec5d242d92d0ff0/news.png" width="1000" height="350">
 
@@ -182,7 +182,7 @@ __After clicking ```Finish``` will redirect back to main page Mall News Page__
 
 ----------------------------------------------------------------------------------
 
-## *Shop Information Page*:
+# *Shop Information Page*:
 __Showing all shop information from MongoDB collection: ```shops```__
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/ececd7b7f36b6617cafea8d03dcd372ee161165c/shop.png" width="1000" height="320">
 
@@ -213,7 +213,7 @@ __After clicking ```Confirm``` will redirect to message_showing page and delete 
 __After clicking ```Finish``` will redirect back to main page Mall News Page__<br />
 
 ----------------------------------------------------------------------------------
-## *Lost List Page*:
+# *Lost List Page*:
 __Showing all lost report from MongoDB collection: ```lostItemData```__ <br />
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/8e1eeb0aa03571d6951c9c115dc1750af14c68f8/lost%20list1.png" width="1000" height="380">
 
@@ -246,7 +246,7 @@ __After clicking ```Confirm``` will redirect to message_showing page and delete 
 __After clicking ```Finish``` will redirect back to main page Mall News Page__<br />
 
 ----------------------------------------------------------------------------------
-## *Claim/Report Lost Page*:
+# *Claim/Report Lost Page*:
 __Showing all claim item from MongoDB collection: ```claimData```__ <br />
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/cae81a94bf8e3cb2f2b227a7a23ecf8bef51acde/claim.png" width="1000" height="380">
 
