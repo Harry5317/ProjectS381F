@@ -268,7 +268,11 @@ app.get('/check',loginCheck,(req, res) => {
 });
 
 // all other page - redirect to login
-
+app.use(formidable());
+const server = app.listen(process.env.PORT || 3000, () => { 
+    const port = server.address().port;
+    console.log(`localhost:${port}`); 
+});
 
 
 //shop API 
@@ -485,9 +489,3 @@ app.get('/*',(req,res) =>{
 })
 
 //End of claim API
-
-app.use(formidable());
-const server = app.listen(process.env.PORT || 3000, () => { 
-    const port = server.address().port;
-    console.log(`localhost:${port}`); 
-});
