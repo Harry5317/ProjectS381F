@@ -303,27 +303,23 @@ app.post('/api/shops/:shop_no', async (req,res) => {
 });
 //read api for shop 
 //curl -X GET http://localhost:3000/api/shops/321
-/*
+
 app.get('/api/shops/:shop_no', async (req,res) => {
     if (req.params.shop_no){
         console.log(req.body);
         const type = "shop_no";
         const collectionName = "shops"
-        const command_str = {};
-        command_str[type] = req.params.shop_no;
         await client.connect();
         console.log("Connect succesfully to server");
-        //const detail = await finddb_para(collectionName,type,command_str);//蛤
         const db = client.db("shops");
-        const detail = await findDocument(db, {"shop_no": req.fields.shop_no});
+        const detail = await finddb_para(collectionName,type,req.params.shop_no)
         res.status(200).json(detail).end();
-            
     } else {
         res.status(500).json({"error": "missing shop_no"});
     }
 });
-*/
 
+/*
 app.get('/api/shops/:shop_no', async (req,res) => {
     if (req.params.shop_no){
         console.log(req.body)
@@ -340,6 +336,7 @@ app.get('/api/shops/:shop_no', async (req,res) => {
         res.status(500).json({"error": "missing shop_no"}).end();
     }
 });
+*/
 
 //update api for shop
 //curl -X PUT -F "phone=99999999" localhost:3000/api/shops/321
@@ -424,11 +421,9 @@ app.get('/api/claim/:claimId', async (req,res) => {
         console.log(req.body)
         const type = "claimId";
         const collectionName = "claimData"
-        const command_str = {};
-        command_str[type] = req.params.claimId;
         await client.connect();
         console.log("Connect succesfully to server");
-        const detail = await finddb_para(collectionName,type,command_str);
+        const detail = await finddb_para(collectionName,type,req.params.claimId);
         res.status(200).json(detail).end();
             
     } else {
@@ -482,10 +477,9 @@ app.delete('/api/claim/:claimId', async (req,res) => {
         res.status(500).json({"error": "missing shop_no"});       
     }
 })
-
+//End of claim API
 
 app.get('/*',(req,res) =>{
 	res.redirect('/login');
 })
 
-//End of claim API
