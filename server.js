@@ -303,35 +303,20 @@ app.post('/api/shops/:shop_no', async (req,res) => {
 });
 //read api for shop 
 //curl -X GET http://localhost:3000/api/shops/321
-
-app.put('/api/shops/:shop_no', async (req,res) => {
-    if (req.params.shop_no) {
-        console.log(req.body)
+app.get('/api/shops/:shop_no', async (req,res) => {
+    if (req.params.shop_no){
+        console.log(req.body);
         const type = "shop_no";
         const collectionName = "shops"
-        const command_str = {};
-        command_str[type] = req.params.shop_no;
         await client.connect();
-        console.log("Connected successfully to server");
+        console.log("Connect succesfully to server");
+        const db = client.db("shops");
         const detail = await finddb_para(collectionName,type,req.params.shop_no)
-        let checkNull = (value,detail_value) => {if (value== null){return detail_value}else{return value}};
-        let updateObj = {
-            shop_no     : req.fields.shop_no || req.params.shop_no,
-            name        : checkNull(req.fields.name,detail.name),
-            type        : checkNull(req.fields.type,detail.type),
-            address     : checkNull(req.fields.address,detail.address),
-            open_time   : checkNull(req.fields.open_time,detail.open_time),
-            close_time  : checkNull(req.fields.close_time,detail.close_time),
-            status      : checkNull(req.fields.status,detail.status),
-            phone       : checkNull(req.fields.phone,detail.phone)
-        };
-        const results = await updateDB(command_str, collectionName, updateObj);
-        res.status(200).json(results).end();
+        res.status(200).json(detail).end();
     } else {
         res.status(500).json({"error": "missing shop_no"});
     }
-})
-
+});
 
 /*
 app.get('/api/shops/:shop_no', async (req,res) => {
@@ -361,20 +346,22 @@ app.put('/api/shops/:shop_no', async (req,res) => {
         const collectionName = "shops"
         const command_str = {};
         command_str[type] = req.params.shop_no;
-		await client.connect();
-		console.log("Connected successfully to server");
-		let updateObj = {
+        await client.connect();
+        console.log("Connected successfully to server");
+        const detail = await finddb_para(collectionName,type,req.params.shop_no)
+        let checkNull = (value,detail_value) => {if (value== null){return detail_value}else{return value}};
+        let updateObj = {
             shop_no     : req.fields.shop_no || req.params.shop_no,
-            name        : req.fields.name,
-            type        : req.fields.type,
-            address     : req.fields.address,
-            open_time   : req.fields.open_time,
-            close_time  : req.fields.close_time,
-            status      : req.fields.status,
-            phone       : req.fields.phone
-		};
-		const results = await updateDB(command_str, collectionName, updateObj);
-		res.status(200).json(results).end();
+            name        : checkNull(req.fields.name,detail.name),
+            type        : checkNull(req.fields.type,detail.type),
+            address     : checkNull(req.fields.address,detail.address),
+            open_time   : checkNull(req.fields.open_time,detail.open_time),
+            close_time  : checkNull(req.fields.close_time,detail.close_time),
+            status      : checkNull(req.fields.status,detail.status),
+            phone       : checkNull(req.fields.phone,detail.phone)
+        };
+        const results = await updateDB(command_str, collectionName, updateObj);
+        res.status(200).json(results).end();
     } else {
         res.status(500).json({"error": "missing shop_no"});
     }
