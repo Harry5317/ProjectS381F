@@ -50,14 +50,6 @@ async function finddb(collectionName){
     return result;
 }
 
-//蛤
-const findDocument = async (db, criteria) => {
-    var collection = db.collection("shops");
-    let results = await collection.find(criteria).toArray();
-	console.log("find the documents:" + JSON.stringify(results));
-    return results;
-}
-
 //find specify item/type search
 async function finddb_para(collectionName,type,parameter){
     await client.connect();
@@ -236,12 +228,6 @@ app.post('/updateForm', async (req, res) => {
     res.status(200).render('message_showing', {name:req.session.username,message:message});
 });
 
-//app.get("/updateConfirm",loginCheck,(req,res) =>{
-//    const message = "Do you want to update this data?" ;
-//    const action = "update";
-//    res.status(200).render("message_confirm",{name:req.session.username,message:message, action:action, id:req.query._id})
-//});
-
 //delete 
 app.get("/deleteConfirm",loginCheck,(req,res) =>{
     const message = "Do you want to delete this data?" ;
@@ -302,7 +288,8 @@ app.post('/api/shops/:shop_no', async (req,res) => {
     }
 });
 //read api for shop 
-//curl -X GET http://localhost:3000/api/shops/321
+//curl -X GET https://projects381f-1076834146749.asia-east1.run.app/api/shops/321
+
 app.get('/api/shops/:shop_no', async (req,res) => {
     if (req.params.shop_no){
         console.log(req.body);
@@ -318,24 +305,6 @@ app.get('/api/shops/:shop_no', async (req,res) => {
     }
 });
 
-/*
-app.get('/api/shops/:shop_no', async (req,res) => {
-    if (req.params.shop_no){
-        console.log(req.body)
-        let criteria = {};
-        criteria['shop_no'] = req.params.shop_no;
-        
-            await client.connect();
-            console.log("Connect succesfully to server");
-            const db = client.db(dbName);
-            const detail = await findDocument(db, criteria);
-            res.status(200).json(detail);
-            
-    } else {
-        res.status(500).json({"error": "missing shop_no"}).end();
-    }
-});
-*/
 
 //update api for shop
 //curl -X PUT -F "phone=99999999" localhost:3000/api/shops/321
@@ -349,16 +318,25 @@ app.put('/api/shops/:shop_no', async (req,res) => {
         await client.connect();
         console.log("Connected successfully to server");
         const detail = await finddb_para(collectionName,type,req.params.shop_no)
+        console.log(detail);
         let updateObj = {
             shop_no     : req.fields.shop_no || req.params.shop_no,
-            name        : req.fields.name||detail.name,
-            type        : req.fields.type||detail.type,
-            address     : req.fields.address||detail.address,
-            open_time   : req.fields.open_time||detail.open_time,
-            close_time  : req.fields.close_time||detail.close_time,
-            status      : req.fields.status|| detail.status,
-            phone       : req.fields.phone||detail.phone
+            name        : req.fields.name ,
+            type        : req.fields.type ,
+            address     : req.fields.address,
+            open_time   : req.fields.open_time,
+            close_time  : req.fields.close_time,
+            status      : req.fields.status,
+            phone       : req.fields.phone
         };
+        for (const [key, value] of Object.entries(updateObj)){
+            if (value === undefined){
+                //console.log(updateObj[key]);
+                //console.log(detail[0][key]);
+                updateObj[key] = detail[0][key];
+            }
+        }
+        console.log(updateObj);
         const results = await updateDB(command_str, collectionName, updateObj);
         res.status(200).json(results).end();
     } else {
@@ -388,8 +366,7 @@ app.delete('/api/shops/:shop_no', async (req,res) => {
 
 //claim API
 //create API for claim
-/*curl -X POST -F "claimId=321" -F "item=Phone" -F "color=White" -F "date=10/05/2024" -F "pickUpPlace=G21" -F "status=Claimed" 
- -F "picture="https://github.com/tommywkc/photo/blob/main/phone1.jpg?raw=true"" localhost:3000/api/claim/321  */
+/*curl -X POST -F "claimId=321" -F "item=Phone" -F "color=White" -F "date=10/05/2024" -F "pickUpPlace=G21" -F "status=Claimed" -F "picture=https://github.com/tommywkc/photo/blob/main/phone1.jpg?raw=true" localhost:3000/api/claim/321  */
 app.post('/api/claim/:claimId', async (req,res) => {
     if (req.params.claimId) {
         console.log(req.body)
@@ -414,7 +391,7 @@ app.post('/api/claim/:claimId', async (req,res) => {
     }
 });
 //read api for claim
-//curl -X GET http://localhost:3000/api/claim/321
+//curl -X GET https://projects381f-1076834146749.asia-east1.run.app/api/claim/321
 app.get('/api/claim/:claimId', async (req,res) => {
     if (req.params.claimId){
         console.log(req.body)
@@ -431,8 +408,8 @@ app.get('/api/claim/:claimId', async (req,res) => {
 });
 
 //update api for claim
-//curl -X PUT -F "phone=99999999" localhost:3000/api/claim/321
- app.put('/api/claim/:claimId', async (req,res) => {
+//curl -X PUT -F "status=Storage room" localhost:3000/api/claim/321
+app.put('/api/claim/:claimId', async (req,res) => {
     if (req.params.claimId) {
         console.log(req.body)
         const type = "claimId";
@@ -440,24 +417,32 @@ app.get('/api/claim/:claimId', async (req,res) => {
         const command_str = {};
         command_str[type] = req.params.claimId;
         await client.connect();
-        const detail = await finddb_para(collectionName,type,req.params.claimID)
+        const detail = await finddb_para(collectionName,type,req.params.claimId)
         console.log("Connected successfully to server");
         let updateObj = {
             claimId     : req.fields.claimId || req.params.claimId,
-            item        : req.fields.item  || detail.item,
-            color       : req.fields.color || detail.color,
-            address     : req.fields.address || detail.address,
-            date        : req.fields.date || detail.date,
-            pickUpPlace : req.fields.pickUpPlace || detail.pickUpPlace,
-            status      : req.fields.status || detail.status,
-            picture     : req.fields.picture || detail.picture
+            item        : req.fields.item,
+            color       : req.fields.color,
+            address     : req.fields.address,
+            date        : req.fields.date,
+            pickUpPlace : req.fields.pickUpPlace,
+            status      : req.fields.status,
+            picture     : req.fields.picture
         };
+        for (const [key, value] of Object.entries(updateObj)){
+            if (value === undefined){
+                //console.log(updateObj[key]);
+                console.log(detail);
+                updateObj[key] = detail[0][key];
+            }
+        }
         const results = await updateDB(command_str, collectionName, updateObj);
         res.status(200).json(results).end();
     } else {
         res.status(500).json({"error": "missing shop_no"});
     }
 }) 
+
 //delete api for claim
 //curl -X DELETE localhost:3000/api/claim/321
 app.delete('/api/claim/:claimId', async (req,res) => {
