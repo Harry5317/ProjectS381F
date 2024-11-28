@@ -92,22 +92,23 @@ async function updateDB (command_str,collectionName,obj) {
         return results;
 }
 //delete db data
-async function deleteDB (collectionName,type,command_str) {
+async function deleteDB(collectionName, type, command_str) {
     await client.connect();
     console.log("Connected successfully to server");
-    const db =  await client.db(dbName);
+    const db = await client.db(dbName);
     const collection = db.collection(collectionName);
-    if(type == "_id"){
-        const DOCID = { '_id': ObjectId.createFromHexString(id) };
-        const results= await collection.deleteOne(DOCID);
-        console.log("delete one document: " + JSON.stringify(results));
+
+    if (type === "_id") {
+        const DOCID = { '_id': ObjectId.createFromHexString(command_str) }; // Use `command_str` here
+        const results = await collection.deleteOne(DOCID);
+        console.log("Deleted one document: " + JSON.stringify(results));
         return results;
-    }else{
-        const results= await collection.deleteOne(command_str);
+    } else {
+        const results = await collection.deleteOne(command_str);
+        console.log("Deleted one document: " + JSON.stringify(results));
         return results;
     }
-    
-};
+}
 
 //function define
 const loginCheck = (req,res,next) => {
@@ -248,9 +249,9 @@ app.get("/deleteConfirm",loginCheck,(req,res) =>{
     res.status(200).render("message_confirm",{name:req.session.username,message:message, action:action, id:req.query._id, db:req.query.db})
 });
 app.get("/delete", async (req, res) => {
-    const result = await deleteDB(req.query.db,"_id",req.query._id);
+    const result = await deleteDB(req.query.db, "_id", req.query._id); // Pass `req.query._id` as the third argument
     const message = "Item delete is finished!";
-    res.status(200).render('message_showing', {name:req.session.username,message:message});
+    res.status(200).render('message_showing', { name: req.session.username, message: message });
 });
 //log out 
 app.get('/logout', (req,res)=>{
