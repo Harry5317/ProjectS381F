@@ -42,6 +42,7 @@ ProjectS381F-main/
 │   │   ├── NewsCss.css
 │   │   ├── ReportiostCss.css
 │   │   └── ShopCss.css
+│   │
 │   └── graphics/
 │       ├── background.png
 │       ├── edit.png
@@ -52,6 +53,7 @@ ProjectS381F-main/
 │       ├── warning.png
 │       ├── white.png
 │       └── x.png
+│
 ├── views/
 │   ├── Claim.ejs
 │   ├── login.ejs
@@ -63,6 +65,7 @@ ProjectS381F-main/
 │   ├── Shop.ejs
 │   ├── ShopUpload.ejs
 │   └── Update.ejs
+│
 ├── README.md
 ├── server.js
 ├── package.json
