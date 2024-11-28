@@ -280,19 +280,25 @@ __After clicking ```Finish``` will redirect back to main page Mall News Page__<b
 - ## Shop APIs
 	* Create New Shop Information: <br />
   ```curl -X POST -F "shop_no=321" -F "name=Trinkey Trove" -F "type=shop" -F "address=119" -F "open_time=08:00" -F "close_time=23:00" -F "status=closed" -F "phone=44444444" https://projects381f-1076834146749.asia-east1.run.app/api/shops/321```
+
 	* Read Shop Informations (base on Shop NO.): <br />
  ```curl -X GET https://projects381f-1076834146749.asia-east1.run.app/api/shops/321```
+
 	* Update Shop Informations (base on Shop NO.): <br />
  ```curl -X PUT -F "phone=99999999" https://projects381f-1076834146749.asia-east1.run.app/api/shops/321```
+
 	* Delete Shop Informations (base on Shop NO.): <br />
  ```curl -X DELETE https://projects381f-1076834146749.asia-east1.run.app/api/shops/321```
 
 - ## Claim APIs
   	* Create New Claim Item: <br />
    ```curl -X POST -F "claimId=321" -F "item=Phone" -F "color=Black" -F "date=24/08/2024" -F "pickUpPlace=G25" -F "status=Claimed" -F "picture=https://github.com/tommywkc/photo/blob/main/phone5.jpeg?raw=true" https://projects381f-1076834146749.asia-east1.run.app/api/claim/321```
+
 	* Read Claim Item (base on Claim ID): <br />
  ```curl -X GET https://projects381f-1076834146749.asia-east1.run.app/api/claim/321```
+
 	* Update Claim Item (base on Claim ID): <br />
  ```curl -X PUT -F "status=Storage room" https://projects381f-1076834146749.asia-east1.run.app/api/claim/321```
+
 	* Delete Claim Item (base on Claim ID): <br />
  ```curl -X DELETE https://projects381f-1076834146749.asia-east1.run.app/api/claim/321```
