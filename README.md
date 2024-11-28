@@ -123,13 +123,13 @@ ProjectS381F-main/
 * x.png
 
 ## 4. views :
-- __Claim.ejs__
-- __login.ejs__
-- __LostList.ejs__
-- __message_confirm.ejs__
-- __message_showing.ejs__
-- __NewsPage.ejs__
-- __Reportlost.ejs__
-- __Shop.ejs__
-- __ShopUpload.ejs__
-- __Update.ejs__
+- Claim.ejs
+- login.ejs
+- LostList.ejs
+- message_confirm.ejs
+- message_showing.ejs
+- NewsPage.ejs
+- Reportlost.ejs
+- Shop.ejs
+- ShopUpload.ejs
+- Update.ejs
