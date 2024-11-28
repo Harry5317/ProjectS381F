@@ -193,6 +193,9 @@ __Using different account to login will show up with different user name.__
 - __It will redirect to ShopUpload page__
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/abc471f8f24fda76b06c837a4f68206256d89c88/UploadShop.png" width="600" height="350">
 
+- __After clicking ```Upload``` button will redirect to message_showing page and upload shop informations to MongoDB collection: ```newsTitleData```__
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/eb1e8a5c824a43bf3b47144c4a6c9c4f7a1bf637/Upload%20Finished.png" width="300" height="150">
+
 
 ## 
 ==================================================================================
