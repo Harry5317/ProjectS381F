@@ -5,7 +5,8 @@ https://projects381f-1076834146749.asia-east1.run.app/
 
 ==================================================================================
 
-### Developers:
+## Hello World! We are Group 36!
+### Our Developers:
 - [13017740] Ng Man Hei
 - [13077944] Wong Kwok Ching
 - [13137889] Lee Chung Ho
@@ -30,5 +31,28 @@ https://projects381f-1076834146749.asia-east1.run.app/
 - Google Cloud (Online Server)
 
 ==================================================================================
-
-
+```
+ProjectS381F-main/
+├── public/
+│   ├── css/
+│   │   ├── ClaimCss.css
+│   │   ├── LoginCss.css
+│   │   ├── main.css
+│   │   ├── messageCss.css
+│   │   ├── NewsCss.css
+│   │   ├── ReportiostCss.css
+│   │   └── ShopCss.css
+│   └── graphics/
+│       ├── background.png
+│       ├── edit.png
+│       ├── lock.png
+│       ├── logo.svg
+│       ├── logo2.svg
+│       ├── user.png
+│       ├── warning.png
+│       ├── white.png
+│       └── x.png
+├── README.md
+└── docs/
+    └── guide.md
+```
