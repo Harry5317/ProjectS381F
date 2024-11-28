@@ -142,9 +142,24 @@ https://projects381f-1076834146749.asia-east1.run.app/
 # Operation guides:
 ## Login Page:
 __Input correct account and password in order to login.__
+Account List:
+```
+	{name: 'cs01', password: '123', type:'customerService', username :'Tommy'},
+	{name: 'cs02', password: '123', type:'customerService', username :'Harry'},
+	{name: 'cs03', password: '123', type:'customerService', username :'Vincent'},
+	{name: 'cs04', password: '123', type:'customerService', username :'Dainel'}, 
+	{name: 'cs05', password: '123', type:'customerService', username :'Jimmy'} 
+```
 
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/10a56ef289c2441183b9a0f2890c00a201dd7ee3/Mainpage.png" width="600" height="350">
 
 __Message__: ```Incorrect account or password``` will be shown if wrong account or password were inputed.
 
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/10a56ef289c2441183b9a0f2890c00a201dd7ee3/error%20account.png" width="300" height="350">
+
+## Accounts:
+__Using different account to login will show up with different user name.__
+- Login with name: ```cs01```
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/f4aba031301e608c6cd85325b1d5dcf4bf9ce34f/BlackTommy.png" width="1000" height="50">
+- Login with name: ```cs02```
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/f4aba031301e608c6cd85325b1d5dcf4bf9ce34f/Harry.png" width="1000" height="50">
