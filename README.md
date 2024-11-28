@@ -141,7 +141,7 @@ https://projects381f-1076834146749.asia-east1.run.app/
 ==================================================================================
 # Operation guides:
 ## *Login Page*:
-__Input correct account and password in order to login.__
+__Input correct account and password in order to login.__ <br />
 Account List:
 ```
 	{name: 'cs01', password: '123', type:'customerService', username :'Tommy'},
@@ -184,7 +184,6 @@ __After clicking ```Finish``` will redirect back to main page Mall News Page__
 
 ## *Shop Information Page*:
 __Showing all shop information from MongoDB collection: ```shops```__
-__Providing ```DELETE``` Button for user to delete news from MongoDB collection: ```newsTitleData```__<br />
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/ececd7b7f36b6617cafea8d03dcd372ee161165c/shop.png" width="1000" height="320">
 
 ### - Search
@@ -200,6 +199,8 @@ __After clicking ```Upload``` button will redirect to message_showing page and u
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/eb1e8a5c824a43bf3b47144c4a6c9c4f7a1bf637/Upload%20Finished.png" width="300" height="150"><br />
 
 __After clicking ```Finish``` will redirect back to main page Mall News Page__<br />
+__Item will be added to Shop Information Page__<br />
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/cae81a94bf8e3cb2f2b227a7a23ecf8bef51acde/ShopResult.png" width="1000" height="160">
  
 ### - Delete
 __Providing ```DELETE``` Button for user to delete shop from MongoDB collection: ```shops```__<br />
@@ -209,11 +210,12 @@ __It will redirect to message_confirm page__<br />
 __After clicking ```Confirm``` will redirect to message_showing page and delete the news__<br />
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/abc471f8f24fda76b06c837a4f68206256d89c88/deleted.png" width="300" height="150"><br />
 
-__After clicking ```Finish``` will redirect back to main page Mall News Page__
+__After clicking ```Finish``` will redirect back to main page Mall News Page__<br />
 
 ----------------------------------------------------------------------------------
 ## *Claim/Report Lost Page*:
-
+__Showing all claim information from MongoDB collection: ```claimData```__ <br />
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/cae81a94bf8e3cb2f2b227a7a23ecf8bef51acde/claim.png" width="1000" height="380">
 
 
 
