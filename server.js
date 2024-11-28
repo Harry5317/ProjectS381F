@@ -349,24 +349,22 @@ app.put('/api/shops/:shop_no', async (req,res) => {
         await client.connect();
         console.log("Connected successfully to server");
         const detail = await finddb_para(collectionName,type,req.params.shop_no)
-        let checkNull = (value,detail_value) => {if (value== null){return detail_value}else{return value}};
         let updateObj = {
             shop_no     : req.fields.shop_no || req.params.shop_no,
-            name        : checkNull(req.fields.name,detail.name),
-            type        : checkNull(req.fields.type,detail.type),
-            address     : checkNull(req.fields.address,detail.address),
-            open_time   : checkNull(req.fields.open_time,detail.open_time),
-            close_time  : checkNull(req.fields.close_time,detail.close_time),
-            status      : checkNull(req.fields.status,detail.status),
-            phone       : checkNull(req.fields.phone,detail.phone)
+            name        : req.fields.name||detail.name,
+            type        : req.fields.type||detail.type,
+            address     : req.fields.address||detail.address,
+            open_time   : req.fields.open_time||detail.open_time,
+            close_time  : req.fields.close_time||detail.close_time,
+            status      : req.fields.status|| detail.status,
+            phone       : req.fields.phone||detail.phone
         };
         const results = await updateDB(command_str, collectionName, updateObj);
         res.status(200).json(results).end();
     } else {
         res.status(500).json({"error": "missing shop_no"});
     }
-})
-
+}) 
 //delete api for shop
 //curl -X DELETE localhost:3000/api/shops/321
 app.delete('/api/shops/:shop_no', async (req,res) => {
@@ -434,7 +432,7 @@ app.get('/api/claim/:claimId', async (req,res) => {
 
 //update api for claim
 //curl -X PUT -F "phone=99999999" localhost:3000/api/claim/321
-app.put('/api/claim/:claimId', async (req,res) => {
+ app.put('/api/claim/:claimId', async (req,res) => {
     if (req.params.claimId) {
         console.log(req.body)
         const type = "claimId";
@@ -443,24 +441,23 @@ app.put('/api/claim/:claimId', async (req,res) => {
         command_str[type] = req.params.claimId;
         await client.connect();
         const detail = await finddb_para(collectionName,type,req.params.claimID)
-        let checkNull = (value,detail_value) => {if (value== null){return detail_value}else{return value}};
         console.log("Connected successfully to server");
         let updateObj = {
             claimId     : req.fields.claimId || req.params.claimId,
-            item        : checkNull(req.fields.item,detail.item),
-            color       : checkNull(req.fields.color,detail.color),
-            address     : checkNull(req.fields.address,detail.address),
-            date        : checkNull(req.fields.date,detail.date),
-            pickUpPlace : checkNull(req.fields.pickUpPlace,detail.pickUpPlace),
-            status      : checkNull(req.fields.status,detail.status),
-            picture     : checkNull(req.fields.picture,detail.picture)
+            item        : req.fields.item  || detail.item,
+            color       : req.fields.color || detail.color,
+            address     : req.fields.address || detail.address,
+            date        : req.fields.date || detail.date,
+            pickUpPlace : req.fields.pickUpPlace || detail.pickUpPlace,
+            status      : req.fields.status || detail.status,
+            picture     : req.fields.picture || detail.picture
         };
         const results = await updateDB(command_str, collectionName, updateObj);
         res.status(200).json(results).end();
     } else {
         res.status(500).json({"error": "missing shop_no"});
     }
-})
+}) 
 //delete api for claim
 //curl -X DELETE localhost:3000/api/claim/321
 app.delete('/api/claim/:claimId', async (req,res) => {
