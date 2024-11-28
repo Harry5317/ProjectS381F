@@ -357,4 +357,4 @@ __After clicking ```Finish``` will redirect back to main page Mall News Page__<b
 <br />
 ![GIF](https://github.com/Harry5317/PhotoOfPage/blob/00137627d4e5b2d908e29d9c98918019b623ec7e/abc.gif)
 <br />
-# You Just Got RickRolled!!!
+You Just Got RickRolled!!!
