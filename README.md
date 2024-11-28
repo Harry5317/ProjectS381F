@@ -3,7 +3,7 @@ This Website is designed for Customer Service in Homantin Plaza.
 Our Website Link: [Click Me](https://projects381f-1076834146749.asia-east1.run.app/)
 
 ==================================================================================
-## Hello World! We are Group 36!
+## Hello World! We are Group 36 !!!
 ### Our Developers:
 - __[13017740] Ng Man Hei__
 - __[13077944] Wong Kwok Ching__
@@ -220,7 +220,7 @@ __Showing all lost report from MongoDB collection: ```lostItemData```__ <br />
 ### - Search
 __Providing ```Search Bar```and ```ENTER``` Button for user to search item from MongoDB collection: ```lostItemData``` with Lost ID.__<br />
 
-## - Update
+### - Update
 __Providing ```Update``` Button [<img src="https://github.com/Harry5317/ProjectS381F/blob/b8f63471f2b48113fc7fbfd600921b769cd905bd/public/graphics/edit.png" width="30" height="30">] It will redirect to Update page__<br />
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/d3e87d5d353d86d1dd8bdf90ca339e4b5cf61079/Lost%20Update.png" width="600" height="350"><br />
 
@@ -235,7 +235,15 @@ __After clicking ```Finish``` will redirect back to main page Mall News Page__<b
 * __After Edit__:
  <img src="https://github.com/Harry5317/PhotoOfPage/blob/d3e87d5d353d86d1dd8bdf90ca339e4b5cf61079/edit2.png" width="1000" height="80">
 
+### - Delete
+__Providing ```DELETE``` Button for user to delete lost report from MongoDB collection: ```lostItemData```__<br />
+__It will redirect to message_confirm page__<br />
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/abc471f8f24fda76b06c837a4f68206256d89c88/comfirm%20delete.png" width="300" height="150"><br />
 
+__After clicking ```Confirm``` will redirect to message_showing page and delete the lost report__<br />
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/abc471f8f24fda76b06c837a4f68206256d89c88/deleted.png" width="300" height="150"><br />
+
+__After clicking ```Finish``` will redirect back to main page Mall News Page__<br />
 
 ----------------------------------------------------------------------------------
 ## *Claim/Report Lost Page*:
