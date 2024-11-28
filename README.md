@@ -141,7 +141,10 @@ https://projects381f-1076834146749.asia-east1.run.app/
 ==================================================================================
 # Operation guides:
 ## Login Page:
-Input correct account and password in order to login.
-![image](https://github.com/Harry5317/PhotoOfPage/blob/10a56ef289c2441183b9a0f2890c00a201dd7ee3/Mainpage.png)
+__Input correct account and password in order to login.__
+
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/10a56ef289c2441183b9a0f2890c00a201dd7ee3/Mainpage.png" width="600" height="350">
+
 __Message__: ```Incorrect account or password``` will be shown if wrong account or password were inputed.
-![image](https://github.com/Harry5317/PhotoOfPage/blob/10a56ef289c2441183b9a0f2890c00a201dd7ee3/error%20account.png)
+
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/10a56ef289c2441183b9a0f2890c00a201dd7ee3/error%20account.png" width="300" height="350">
