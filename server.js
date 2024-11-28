@@ -411,7 +411,7 @@ app.post('/api/claim/:claimId', async (req,res) => {
             status      : req.fields.status,
             picture     : req.fields.picture
         };
-        await addDB(collectionName, newobj);
+        await addDB(collectionName, newObj);
         res.status(200).json({"Successfully inserted":newObj}).end();
     } else {
         res.status(500).json({"error": "missing Shop No"});
