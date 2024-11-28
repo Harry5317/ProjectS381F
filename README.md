@@ -78,7 +78,7 @@ ProjectS381F-main/
   * Users can login with specify username and password.
   * Login information will be saved in Cookie.
 - __User Logout__:
-  * User can logout with clicking ```LOG OUT``` button.
+  * User can logout with clicking ```LOGOUT``` button.
 - __finddb()__ :
   * Server return the array of collection from MongoDB.
 - __finddb_para()__ :
@@ -91,5 +91,14 @@ ProjectS381F-main/
   * User can delete specify item on specify collection in MongoDB.
 
 ## 2. package.json :
-
+### - __Dependencies__:
+  * body-parser
+  * cookie-session
+  * ejs
+  * express
+  * express-session
+  * express-formidable
+  * mongodb
+  * mongoose
+  * path
   
