@@ -150,11 +150,9 @@ Account List:
 	{name: 'cs04', password: '123', type:'customerService', username :'Dainel'}, 
 	{name: 'cs05', password: '123', type:'customerService', username :'Jimmy'} 
 ```
-
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/10a56ef289c2441183b9a0f2890c00a201dd7ee3/Mainpage.png" width="600" height="350">
 
 __Message__: ```Incorrect account or password``` will be shown if wrong account or password were inputed.
-
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/10a56ef289c2441183b9a0f2890c00a201dd7ee3/error%20account.png" width="300" height="350">
 
 ## Accounts:
@@ -163,3 +161,20 @@ __Using different account to login will show up with different user name.__
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/f4aba031301e608c6cd85325b1d5dcf4bf9ce34f/BlackTommy.png" width="1000" height="50">
 - Login with name: ```cs02```
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/f4aba031301e608c6cd85325b1d5dcf4bf9ce34f/Harry.png" width="1000" height="50">
+
+### Feel free trying to login with other account
+## Mall News Page:
+- __Showing all mall news from MongoDB collection: ```newsTitleData```__
+- __Providing ```DELETE``` Button for user to delete news from MongoDB collection: ```newsTitleData```__
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/1f281cfdda590ee5176956ed0ec5d242d92d0ff0/news.png" width="1000" height="350">
+
+## Shop Information Page:
+- __Showing all shop information from MongoDB collection: ```shops```__
+- __Providing ```DELETE``` Button for user to delete news from MongoDB collection: ```newsTitleData```__
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/ececd7b7f36b6617cafea8d03dcd372ee161165c/shop.png" width="1000" height="320">
+- __Providing ```Search Bar```and ```ENTER``` Button for user to search shop from MongoDB collection: ```shops``` with Shop NO.__
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/ececd7b7f36b6617cafea8d03dcd372ee161165c/shop%20search.png" width="1000" height="280">
+- __Providing ```UPLOAD SHOP +``` Button for user to add shop to MongoDB collection: ```shops```__
+  __It will redirect 
+
+## 
