@@ -133,3 +133,15 @@ ProjectS381F-main/
 - Shop.ejs
 - ShopUpload.ejs
 - Update.ejs
+
+==================================================================================
+# Cloud-based server URL:
+https://projects381f-1076834146749.asia-east1.run.app/
+
+==================================================================================
+# Operation guides:
+## Login Page:
+Input correct account and password in order to login.
+![image](https://github.com/Harry5317/PhotoOfPage/blob/10a56ef289c2441183b9a0f2890c00a201dd7ee3/Mainpage.png)
+__Message__: ```Incorrect account or password``` will be shown if wrong account or password were inputed.
+![image](https://github.com/Harry5317/PhotoOfPage/blob/10a56ef289c2441183b9a0f2890c00a201dd7ee3/error%20account.png)
