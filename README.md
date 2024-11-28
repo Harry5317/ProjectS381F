@@ -72,9 +72,24 @@ ProjectS381F-main/
 
 ==================================================================================
 # Project File Introduction:
-## server.js :
-#### Features :
+## 1. server.js :
+### Features :
 - User Login:
-  Users can login with a username and password.
+  * Users can login with specify username and password.
+  * Login information will be saved in Cookie.
 - User Logout:
+  * User can logout with clicking ```LOG OUT``` button.
+- finddb() :
+  * Server return the array of collection from MongoDB.
+- finddb_para() :
+  * Server return the specify collection base on type and item parameter from MongoDB.
+- addDB() :
+  * User can upload item onto specify collection in MongoDB.
+- updateDB() :
+  * User can update specify item on specify collection in MongoDB.
+- deleteDB() :
+  * User can delete specify item on specify collection in MongoDB.
+
+## 2. package.json :
+
   
