@@ -140,7 +140,7 @@ https://projects381f-1076834146749.asia-east1.run.app/
 
 ==================================================================================
 # Operation guides:
-## Login Page:
+## *Login Page*:
 __Input correct account and password in order to login.__
 Account List:
 ```
@@ -155,26 +155,52 @@ Account List:
 __Message__: ```Incorrect account or password``` will be shown if wrong account or password were inputed.
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/10a56ef289c2441183b9a0f2890c00a201dd7ee3/error%20account.png" width="300" height="350">
 
-## Accounts:
+## *Accounts*:
 __Using different account to login will show up with different user name.__
 - Login with name: ```cs01```
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/f4aba031301e608c6cd85325b1d5dcf4bf9ce34f/BlackTommy.png" width="1000" height="50">
+
 - Login with name: ```cs02```
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/f4aba031301e608c6cd85325b1d5dcf4bf9ce34f/Harry.png" width="1000" height="50">
 
-### Feel free trying to login with other account
-## Mall News Page:
+### Feel free trying to login with other account !!!
+## *Mall News Page*:
 - __Showing all mall news from MongoDB collection: ```newsTitleData```__
 - __Providing ```DELETE``` Button for user to delete news from MongoDB collection: ```newsTitleData```__
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/1f281cfdda590ee5176956ed0ec5d242d92d0ff0/news.png" width="1000" height="350">
 
-## Shop Information Page:
+## *Shop Information Page*:
 - __Showing all shop information from MongoDB collection: ```shops```__
 - __Providing ```DELETE``` Button for user to delete news from MongoDB collection: ```newsTitleData```__
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/ececd7b7f36b6617cafea8d03dcd372ee161165c/shop.png" width="1000" height="320">
+
 - __Providing ```Search Bar```and ```ENTER``` Button for user to search shop from MongoDB collection: ```shops``` with Shop NO.__
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/ececd7b7f36b6617cafea8d03dcd372ee161165c/shop%20search.png" width="1000" height="280">
+
 - __Providing ```UPLOAD SHOP +``` Button for user to add shop to MongoDB collection: ```shops```__
-  __It will redirect 
+- __It will redirect to ShopUpload page__
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/abc471f8f24fda76b06c837a4f68206256d89c88/UploadShop.png" width="600" height="350">
+
 
 ## 
+==================================================================================
+# API Keys:
+- ## Shop APIs
+	* Create New Shop Information: <br />
+  ```curl -X POST -F "shop_no=321" -F "name=Trinkey Trove" -F "type=shop" -F "address=119" -F "open_time=08:00" -F "close_time=23:00" -F "status=closed" -F "phone=44444444" https://projects381f-1076834146749.asia-east1.run.app/api/shops/321```
+	* Read Shop Informations (base on Shop NO.): <br />
+ ```curl -X GET https://projects381f-1076834146749.asia-east1.run.app/api/shops/321```
+	* Update Shop Informations (base on Shop NO.): <br />
+ ```curl -X PUT -F "phone=99999999" https://projects381f-1076834146749.asia-east1.run.app/api/shops/321```
+	* Delete Shop Informations (base on Shop NO.): <br />
+ ```curl -X DELETE https://projects381f-1076834146749.asia-east1.run.app/api/shops/321```
+
+- ## Claim APIs
+  	* Create New Claim Item: <br />
+   ```curl -X POST -F "claimId=321" -F "item=Phone" -F "color=Black" -F "date=24/08/2024" -F "pickUpPlace=G25" -F "status=Claimed" -F "picture=https://github.com/tommywkc/photo/blob/main/phone5.jpeg?raw=true" https://projects381f-1076834146749.asia-east1.run.app/api/claim/321```
+	* Read Claim Item (base on Claim ID): <br />
+ ```curl -X GET https://projects381f-1076834146749.asia-east1.run.app/api/claim/321```
+	* Update Claim Item (base on Claim ID): <br />
+ ```curl -X PUT -F "status=Storage room" https://projects381f-1076834146749.asia-east1.run.app/api/claim/321```
+	* Delete Claim Item (base on Claim ID): <br />
+ ```curl -X DELETE https://projects381f-1076834146749.asia-east1.run.app/api/claim/321```
