@@ -52,7 +52,19 @@ ProjectS381F-main/
 │       ├── warning.png
 │       ├── white.png
 │       └── x.png
+├── views/
+│   ├── Claim.ejs
+│   ├── login.ejs
+│   ├── LostList.ejs
+│   ├── message_confirm.ejs
+│   ├── message_showing.ejs
+│   ├── NewsPage.ejs
+│   ├── Reportlost.ejs
+│   ├── Shop.ejs
+│   ├── ShopUpload.ejs
+│   └── Update.ejs
 ├── README.md
-└── docs/
-    └── guide.md
+├── server.js
+├── package.json
+└── package-lock.json
 ```
