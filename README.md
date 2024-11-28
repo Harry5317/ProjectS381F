@@ -302,3 +302,58 @@ __After clicking ```Finish``` will redirect back to main page Mall News Page__<b
 
 	* Delete Claim Item (base on Claim ID): <br />
  ```curl -X DELETE https://projects381f-1076834146749.asia-east1.run.app/api/claim/321```
+
+======================================The End=====================================
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+![GIF](https://github.com/Harry5317/PhotoOfPage/blob/00137627d4e5b2d908e29d9c98918019b623ec7e/abc.gif)
+#You Just Got RickRolled!!!
