@@ -463,7 +463,7 @@ app.put('/api/claim/:claimId', async (req,res) => {
 //delete api for claim
 //curl -X DELETE localhost:3000/api/claim/321
 app.delete('/api/claim/:claimId', async (req,res) => {
-    if (req.params.shop_no) {
+    if (req.params.claimId) {
 		console.log(req.body)
         const type = "claimId";
         const collectionName = "claimData"
