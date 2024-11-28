@@ -167,37 +167,62 @@ __Using different account to login will show up with different user name.__
 ### Feel free trying to login with other account !!!
 ----------------------------------------------------------------------------------
 ## *Mall News Page*:
-- __Showing all mall news from MongoDB collection: ```newsTitleData```__
+__Showing all mall news from MongoDB collection: ```newsTitleData```__
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/1f281cfdda590ee5176956ed0ec5d242d92d0ff0/news.png" width="1000" height="350">
 
-- __Providing ```DELETE``` Button for user to delete news from MongoDB collection: ```newsTitleData```__
-- __It will redirect to message_confirm page__
-<img src="https://github.com/Harry5317/PhotoOfPage/blob/abc471f8f24fda76b06c837a4f68206256d89c88/comfirm%20delete.png" width="300" height="150">
+### - Delete
+__Providing ```DELETE``` Button for user to delete news from MongoDB collection: ```newsTitleData```__
+__It will redirect to message_confirm page__<br />
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/abc471f8f24fda76b06c837a4f68206256d89c88/comfirm%20delete.png" width="300" height="150"><br />
 
-- __After clicking ```Confirm``` will redirect to message_showing page and delete the news__
-<img src="https://github.com/Harry5317/PhotoOfPage/blob/abc471f8f24fda76b06c837a4f68206256d89c88/deleted.png" width="300" height="150">
+__After clicking ```Confirm``` will redirect to message_showing page and delete the news__<br />
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/abc471f8f24fda76b06c837a4f68206256d89c88/deleted.png" width="300" height="150"><br />
 
-- __After clicking ```Finish``` will redirect back to main page Mall News Page__
+__After clicking ```Finish``` will redirect back to main page Mall News Page__
 
 ----------------------------------------------------------------------------------
 
 ## *Shop Information Page*:
-- __Showing all shop information from MongoDB collection: ```shops```__
-- __Providing ```DELETE``` Button for user to delete news from MongoDB collection: ```newsTitleData```__
+__Showing all shop information from MongoDB collection: ```shops```__
+__Providing ```DELETE``` Button for user to delete news from MongoDB collection: ```newsTitleData```__<br />
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/ececd7b7f36b6617cafea8d03dcd372ee161165c/shop.png" width="1000" height="320">
 
-- __Providing ```Search Bar```and ```ENTER``` Button for user to search shop from MongoDB collection: ```shops``` with Shop NO.__
+### - Search
+__Providing ```Search Bar```and ```ENTER``` Button for user to search shop from MongoDB collection: ```shops``` with Shop NO.__<br />
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/ececd7b7f36b6617cafea8d03dcd372ee161165c/shop%20search.png" width="1000" height="280">
 
-- __Providing ```UPLOAD SHOP +``` Button for user to add shop to MongoDB collection: ```shops```__
-- __It will redirect to ShopUpload page__
-<img src="https://github.com/Harry5317/PhotoOfPage/blob/abc471f8f24fda76b06c837a4f68206256d89c88/UploadShop.png" width="600" height="350">
+### - Upload
+__Providing ```UPLOAD SHOP +``` Button for user to add shop to MongoDB collection: ```shops```__<br />
+__It will redirect to ShopUpload page__<br />
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/cae81a94bf8e3cb2f2b227a7a23ecf8bef51acde/shoptest.png" width="600" height="350"><br />
 
-- __After clicking ```Upload``` button will redirect to message_showing page and upload shop informations to MongoDB collection: ```newsTitleData```__
-<img src="https://github.com/Harry5317/PhotoOfPage/blob/eb1e8a5c824a43bf3b47144c4a6c9c4f7a1bf637/Upload%20Finished.png" width="300" height="150">
+__After clicking ```Upload``` button will redirect to message_showing page and upload shop informations to MongoDB collection: ```newsTitleData```__<br />
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/eb1e8a5c824a43bf3b47144c4a6c9c4f7a1bf637/Upload%20Finished.png" width="300" height="150"><br />
+
+__After clicking ```Finish``` will redirect back to main page Mall News Page__<br />
+ 
+### - Delete
+__Providing ```DELETE``` Button for user to delete shop from MongoDB collection: ```shops```__<br />
+__It will redirect to message_confirm page__<br />
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/abc471f8f24fda76b06c837a4f68206256d89c88/comfirm%20delete.png" width="300" height="150"><br />
+
+__After clicking ```Confirm``` will redirect to message_showing page and delete the news__<br />
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/abc471f8f24fda76b06c837a4f68206256d89c88/deleted.png" width="300" height="150"><br />
+
+__After clicking ```Finish``` will redirect back to main page Mall News Page__
+
+----------------------------------------------------------------------------------
+## *Claim/Report Lost Page*:
 
 
-## 
+
+
+
+
+
+
+
+
 ==================================================================================
 # API Keys:
 - ## Shop APIs
