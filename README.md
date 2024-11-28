@@ -101,4 +101,35 @@ ProjectS381F-main/
   * mongodb
   * mongoose
   * path
-  
+
+## 3. public :
+### - __css (Provide CSS webpage design for each page)__:
+* ClaimCss.css
+* LoginCss.css
+* main.css
+* messageCss.css
+* NewsCss.css
+* ReportiostCss.css
+* ShopCss.css
+### - __graphics (Provide Image design for different elements)__:
+* background.png
+* edit.png
+* lock.png
+* logo.svg
+* logo2.svg
+* user.png
+* warning.png
+* white.png
+* x.png
+
+## 4. views :
+- __Claim.ejs__
+- __login.ejs__
+- __LostList.ejs__
+- __message_confirm.ejs__
+- __message_showing.ejs__
+- __NewsPage.ejs__
+- __Reportlost.ejs__
+- __Shop.ejs__
+- __ShopUpload.ejs__
+- __Update.ejs__
