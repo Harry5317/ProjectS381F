@@ -1,7 +1,7 @@
 # Homantin Plaza Customer Service System
 This Website is designed for Customer Service in Homantin Plaza.
 Our Website Link: [Click Me](https://projects381f-1076834146749.asia-east1.run.app/) <br />
-// [Read this file on github for better reading experience.](https://github.com/Harry5317/ProjectS381F/blob/main/README.md)
+[Read this file on github for better reading experience.](https://github.com/Harry5317/ProjectS381F/blob/main/README.md)
 
 ==================================================================================
 ## Hello World! We are Group 36 !!!
