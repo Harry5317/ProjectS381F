@@ -192,7 +192,7 @@ __Providing ```Search Bar```and ```ENTER``` Button for user to search shop from 
 
 ### - Upload
 __Providing ```UPLOAD SHOP +``` Button for user to add shop to MongoDB collection: ```shops```__<br />
-__It will redirect to ShopUpload page__<br />
+__Clicking it will redirect to ShopUpload page__<br />
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/cae81a94bf8e3cb2f2b227a7a23ecf8bef51acde/shoptest.png" width="600" height="350"><br />
 
 __After clicking ```Upload``` button will redirect to message_showing page and upload shop informations to MongoDB collection: ```newsTitleData```__<br />
@@ -204,7 +204,7 @@ __Item will be added to Shop Information Page__<br />
  
 ### - Delete
 __Providing ```DELETE``` Button for user to delete shop from MongoDB collection: ```shops```__<br />
-__It will redirect to message_confirm page__<br />
+__Clicking it will redirect to message_confirm page__<br />
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/abc471f8f24fda76b06c837a4f68206256d89c88/comfirm%20delete.png" width="300" height="150"><br />
 
 __After clicking ```Confirm``` will redirect to message_showing page and delete the news__<br />
@@ -218,7 +218,8 @@ __Showing all lost report from MongoDB collection: ```lostItemData```__ <br />
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/8e1eeb0aa03571d6951c9c115dc1750af14c68f8/lost%20list1.png" width="1000" height="380">
 
 ### - Search
-__Providing ```Search Bar```and ```ENTER``` Button for user to search item from MongoDB collection: ```lostItemData``` with Lost ID.__<br />
+__Providing ```Search Bar```and ```ENTER``` Button for user to search item from MongoDB collection: ```lostItemData``` with Lost Item name.__<br />
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/c0eae28a349af5a3b0e77f4f0695d329f9c9e36c/lostSearch.png" width="1000" height="340">
 
 ### - Update
 __Providing ```Update``` Button [<img src="https://github.com/Harry5317/ProjectS381F/blob/b8f63471f2b48113fc7fbfd600921b769cd905bd/public/graphics/edit.png" width="30" height="30">] It will redirect to Update page__<br />
@@ -237,7 +238,7 @@ __After clicking ```Finish``` will redirect back to main page Mall News Page__<b
 
 ### - Delete
 __Providing ```DELETE``` Button for user to delete lost report from MongoDB collection: ```lostItemData```__<br />
-__It will redirect to message_confirm page__<br />
+__Clicking it will redirect to message_confirm page__<br />
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/abc471f8f24fda76b06c837a4f68206256d89c88/comfirm%20delete.png" width="300" height="150"><br />
 
 __After clicking ```Confirm``` will redirect to message_showing page and delete the lost report__<br />
@@ -251,11 +252,12 @@ __Showing all claim item from MongoDB collection: ```claimData```__ <br />
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/cae81a94bf8e3cb2f2b227a7a23ecf8bef51acde/claim.png" width="1000" height="380">
 
 ### - Search
-__Providing ```Search Bar```and ```ENTER``` Button for user to search item from MongoDB collection: ```claimData``` with Claim ID.__<br />
+__Providing ```Search Bar```and ```ENTER``` Button for user to search item from MongoDB collection: ```claimData``` with Claim item name.__<br />
+<img src="https://github.com/Harry5317/PhotoOfPage/blob/c0eae28a349af5a3b0e77f4f0695d329f9c9e36c/claimsearch.png" width="1000" height="540">
 
 ### - Report Lost
 __Providing ```REPORT LOST +``` Button for user to add lost item to MongoDB collection: ```lostItemData```__<br />
-__It will redirect to Reportlost page__<br />
+__Clicking it will redirect to Reportlost page__<br />
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/8e1eeb0aa03571d6951c9c115dc1750af14c68f8/ReportLost.png" width="600" height="350"><br />
 
 __After clicking ```Upload``` button will redirect to message_showing page and upload shop informations to MongoDB collection: ```lostItemDate```__<br />
@@ -267,7 +269,7 @@ __Item will be added to LOST LIST__<br />
 
 ### - Delete
 __Providing ```DELETE``` Button for user to delete claim item from MongoDB collection: ```claimData```__<br />
-__It will redirect to message_confirm page__<br />
+__Clicking it will redirect to message_confirm page__<br />
 <img src="https://github.com/Harry5317/PhotoOfPage/blob/abc471f8f24fda76b06c837a4f68206256d89c88/comfirm%20delete.png" width="300" height="150"><br />
 
 __After clicking ```Confirm``` will redirect to message_showing page and delete the item__<br />
