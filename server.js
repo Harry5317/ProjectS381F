@@ -263,7 +263,7 @@ const server = app.listen(process.env.PORT || 3000, () => {
 
 //shop API 
 //create API for shop
-//curl -X POST -F "shop_no=321" -F "name=Trinkey Trove" -F "type=shop" -F "address=119" -F "open_time=08:00" -F "close_time=23:00" -F "status=closed" -F "phone=44444444" localhost:3000/api/shops/321
+//curl -X POST -F "shop_no=321" -F "name=Trinkey Trove" -F "type=shop" -F "address=119" -F "open_time=08:00" -F "close_time=23:00" -F "status=closed" -F "phone=44444444" https://projects381f-1076834146749.asia-east1.run.app/api/shops/321
 app.post('/api/shops/:shop_no', async (req,res) => {
     if (req.params.shop_no) {
         console.log(req.body);
@@ -307,7 +307,7 @@ app.get('/api/shops/:shop_no', async (req,res) => {
 
 
 //update api for shop
-//curl -X PUT -F "phone=99999999" localhost:3000/api/shops/321
+//curl -X PUT -F "phone=99999999" https://projects381f-1076834146749.asia-east1.run.app/api/shops/321
 app.put('/api/shops/:shop_no', async (req,res) => {
     if (req.params.shop_no) {
         console.log(req.body)
@@ -344,7 +344,7 @@ app.put('/api/shops/:shop_no', async (req,res) => {
     }
 }) 
 //delete api for shop
-//curl -X DELETE localhost:3000/api/shops/321
+//curl -X DELETE https://projects381f-1076834146749.asia-east1.run.app/api/shops/321
 app.delete('/api/shops/:shop_no', async (req,res) => {
     if (req.params.shop_no) {
 		console.log(req.body)
@@ -366,7 +366,7 @@ app.delete('/api/shops/:shop_no', async (req,res) => {
 
 //claim API
 //create API for claim
-/*curl -X POST -F "claimId=321" -F "item=Phone" -F "color=White" -F "date=10/05/2024" -F "pickUpPlace=G21" -F "status=Claimed" -F "picture=https://github.com/tommywkc/photo/blob/main/phone1.jpg?raw=true" localhost:3000/api/claim/321  */
+//curl -X POST -F "claimId=321" -F "item=Phone" -F "color=Black" -F "date=24/08/2024" -F "pickUpPlace=G25" -F "status=Claimed" -F "picture=https://github.com/tommywkc/photo/blob/main/phone5.jpeg?raw=true" https://projects381f-1076834146749.asia-east1.run.app/api/claim/321
 app.post('/api/claim/:claimId', async (req,res) => {
     if (req.params.claimId) {
         console.log(req.body)
@@ -408,7 +408,7 @@ app.get('/api/claim/:claimId', async (req,res) => {
 });
 
 //update api for claim
-//curl -X PUT -F "status=Storage room" localhost:3000/api/claim/321
+//curl -X PUT -F "status=Storage room" https://projects381f-1076834146749.asia-east1.run.app/api/claim/321
 app.put('/api/claim/:claimId', async (req,res) => {
     if (req.params.claimId) {
         console.log(req.body)
@@ -444,7 +444,7 @@ app.put('/api/claim/:claimId', async (req,res) => {
 }) 
 
 //delete api for claim
-//curl -X DELETE localhost:3000/api/claim/321
+//curl -X DELETE https://projects381f-1076834146749.asia-east1.run.app/api/claim/321
 app.delete('/api/claim/:claimId', async (req,res) => {
     if (req.params.claimId) {
 		console.log(req.body)
