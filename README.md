@@ -308,7 +308,12 @@ __After clicking ```Finish``` will redirect back to main page Mall News Page__<b
 	* Delete Claim Item (base on Claim ID): <br />
  ```curl -X DELETE https://projects381f-1076834146749.asia-east1.run.app/api/claim/321```
 
-======================================The End=====================================
+==================================================================================
+# Reference
+- [COMPS381F Lecture notes and Github](https://github.com/yalin-liu/cloudserver381-2024/tree/main)
+- Stackoverflow
+
+====================The End====================
 <br />
 <br />
 <br />
