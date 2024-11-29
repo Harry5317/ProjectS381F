@@ -91,18 +91,20 @@ ProjectS381F-main/
   * User can delete specify item on specify collection in MongoDB.
 
 ## 2. package.json :
+
 ### - __Dependencies__:
   * body-parser
   * cookie-session
   * ejs
   * express
-  * express-session
+ * express-session
   * express-formidable
   * mongodb
   * mongoose
   * path
 
 ## 3. public :
+
 ### - __css (Provide CSS webpage design for each page)__:
 * ClaimCss.css
 * LoginCss.css
@@ -111,6 +113,7 @@ ProjectS381F-main/
 * NewsCss.css
 * ReportiostCss.css
 * ShopCss.css
+
 ### - __graphics (Provide Image design for different elements)__:
 * background.png
 * edit.png
